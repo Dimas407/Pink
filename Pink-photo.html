@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="webmart" charset="utf-8" content="text/html">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pink</title>
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__oll">
+        <div class="page-header__wrapper">
+            <a class="page-header__logo">
+                <img class="logo1" src="image/logo-mobile.png" width="78px" height="25px" alt="Pink">
+                <img class="logo2" src="image/logo-2.png" width="150px" height="50px" alt="Pink">
+                <img class="logo3" src="image/logo-3.png"width="150px" height="50px" alt="Pink">
+            </a>
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <button class="main-nav__toggle" type="button">
+                    Открыть меню
+                </button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site list__item--active">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="photo.html">Фотографии</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="contest.html">Конкурс</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="discount.html">Скидки</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <script type="text/javascript">
+        let navMain = document.querySelector('.main-nav');
+        let navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function () {
+            if (navMain.classList.contains('main-nav--closed')){
+                navMain.classList.remove('main-nav--closed');
+                navMain.classList.add('main-nav--opened');
+            }else{
+                navMain.classList.add('main-nav--closed');
+                navMain.classList.remove('main-nav--opened');
+            }
+        })
+    </script>
+    <div class="page-header__image">
+        <img class="city-mob city-mob__iphone" src="image/city-mobile.jpg">
+        <img class="city-mob__iphone2" src="image/city-tablet.jpg">
+        <img class="city-mob__iphone3" src="image/city-desctop.jpg">
+    </div>
+    <div class="page-header__h1">
+        <h1>Фотографии пользователей</h1>
+    </div>
+    <div class="body-text">
+        <div class="body-text__wrapper">
+            <h2>Взгляните на фотографии,
+            которые выкладывают пользователи!
+            Видите, как не хватает ваших?</h2>
+        </div>
+    </div>
+    <div class="photo1">
+        <div class="photo1__wrapper">
+            <div class="photo1-block">
+                Панорама дня
+            </div>
+            <img class="photo-panorama1" src="image/panorama-mobile.jpg">
+            <img class="photo-panorama2" src="image/panorama-tablet.jpg">
+            <img class="photo-panorama3" src="image/panorama-desktop.jpg">
+        </div>
+    </div>
+    <div class="comment-photo">
+        <div class="comment-photo__wrapper">
+            <div class="comment-photo__name">
+                <div class="name">
+                    <span class="name-block">Анна</span>
+                    <span class="name-time">(5 минут назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite1">
+                    Нравится:215
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Прыгать или нет? Напишитет в комнтариях
+                свои советы и смотрите прямую трансляцию
+                в перископе, задавайте свои вопросы!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:215
+            </div>
+        </div>
+    </div>
+    <div class="photo-comment-block1">
+        <div class="photo-comment-block__wrapper">
+            <div class="photo-block">
+                <img src="image/car.jpg">
+                <div class="comment-photo__name">
+                    <div class="name2">
+                        <span class="name-block">Левон</span>
+                        <span class="name-time">(5 часов назад)</span>
+                    </div>
+                    <div class="comment-photo__like comment-photo__sprite">
+                        Нравится:356
+                    </div>
+                </div>
+                <p class="comment-photo__text">
+                    Вчера сново на луну летал, сегодня в руки к нам попал.
+                </p>
+                <div class="comment-photo__like2 comment-photo__sprite">
+                    Нравится:356
+                </div>
+            </div>
+            <div class="photo-block2">
+                <img src="image/drum.jpg">
+                <div class="comment-photo__name">
+                    <div class="name2">
+                        <span class="name-block">Антон</span>
+                        <span class="name-time">(12 часов назад)</span>
+                    </div>
+                    <div class="comment-photo__like comment-photo__sprite">
+                        Нравится:660
+                    </div>
+                </div>
+                <p class="comment-photo__text">
+                    Соседи будут рады!
+                </p>
+                <div class="comment-photo__like2 comment-photo__sprite">
+                    Нравится:660
+                </div>
+            </div>
+            <div class="photo-block2">
+                <img src="image/room.jpg">
+                <div class="comment-photo__name">
+                    <div class="name2">
+                        <span class="name-block">Борис</span>
+                        <span class="name-time">(20 часов назад)</span>
+                    </div>
+                    <div class="comment-photo__like comment-photo__sprite">
+                        Нравится:215
+                    </div>
+                </div>
+                <p class="comment-photo__text">
+                    Здесь могла быть ваша цитата о
+                    высоком и вычном.
+                </p>
+                <div class="comment-photo__like2 comment-photo__sprite">
+                    Нравится:215
+                </div>
+            </div>
+        <div class="photo-block">
+            <img src="image/market.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Сергей</span>
+                    <span class="name-time">(25 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:4
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Самая кубанская в мире!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:4
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/legs.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Максим</span>
+                    <span class="name-time">(40 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:150
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Где снег-то?
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:150
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/wing.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Надежда</span>
+                    <span class="name-time">(45 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:2560
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Всем GM и взаимные лайки!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:2560
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photo-comment-block2">
+    <div class="photo-comment-block__wrapper">
+        <div class="photo-block">
+            <img src="image/car2.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Левон</span>
+                    <span class="name-time">(5 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:356
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Вчера сново на луну летал, сегодня в руки к нам попал.
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:356
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/drum2.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Антон</span>
+                    <span class="name-time">(12 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:660
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Соседи будут рады!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:660
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photo-comment-block2">
+    <div class="photo-comment-block__wrapper">
+        <div class="photo-block2">
+            <img src="image/room2.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Борис</span>
+                    <span class="name-time">(20 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:215
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Здесь могла быть ваша цитата о
+                высоком и вычном.
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:215
+            </div>
+        </div>
+        <div class="photo-block">
+            <img src="image/market2.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Сергей</span>
+                    <span class="name-time">(25 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:4
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Самая кубанская в мире!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:4
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photo-comment-block2">
+    <div class="photo-comment-block__wrapper">
+        <div class="photo-block2">
+            <img src="image/legs2.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Максим</span>
+                    <span class="name-time">(40 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:150
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Где снег-то?
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:150
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/wing2.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Надежда</span>
+                    <span class="name-time">(45 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:2560
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Всем GM и взаимные лайки!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:2560
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photo-comment-block3">
+    <div class="photo-comment-block__wrapper">
+        <div class="photo-block">
+            <img src="image/car3.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Левон</span>
+                    <span class="name-time">(5 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:356
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Вчера сново на луну летал, сегодня в руки к нам попал.
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:356
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/drum3.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Антон</span>
+                    <span class="name-time">(12 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:660
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Соседи будут рады!
+
+            </p>
+            <div class="comment-photo__like3 comment-photo__sprite">
+                Нравится:660
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/room3.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Борис</span>
+                    <span class="name-time">(20 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:215
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Здесь могла быть ваша цитата о
+                высоком и вычном.
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:215
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photo-comment-block3">
+    <div class="photo-comment-block__wrapper">
+        <div class="photo-block">
+            <img src="image/market3.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Сергей</span>
+                    <span class="name-time">(25 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:4
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Самая кубанская в мире!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:4
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/legs3.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Максим</span>
+                    <span class="name-time">(40 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:150
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Где снег-то?
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:150
+            </div>
+        </div>
+        <div class="photo-block2">
+            <img src="image/wing3.jpg">
+            <div class="comment-photo__name">
+                <div class="name2">
+                    <span class="name-block">Надежда</span>
+                    <span class="name-time">(45 часов назад)</span>
+                </div>
+                <div class="comment-photo__like comment-photo__sprite">
+                    Нравится:2560
+                </div>
+            </div>
+            <p class="comment-photo__text">
+                Всем GM и взаимные лайки!
+            </p>
+            <div class="comment-photo__like2 comment-photo__sprite">
+                Нравится:2560
+            </div>
+        </div>
+    </div>
+</div>
+<div class="settings-body-block">
+    <div class="setings-body__wrapper">
+        <h2>
+            Затмите их всех!
+            Выкладывайте все, что накопилось в
+            телефоне!
+        </h2>
+    </div>
+    <div class="body-advertisig__img">
+        <div class="body-advertising__img-wrapper-oll">
+            <div class="body-adverising__img-wrapper">
+                <img src="image/winter3.jpg">
+            </div>
+            <div class="body-advertising__price">
+                <div class="body-advertising__sprite-oll">
+                    <div class="advertising-sprite-block body-advertising__crop">Обрезать</div>
+                    <div class="advertising-sprite-block body-advertising__fill">Заполить</div>
+                    <div class="advertising-sprite-block body-advertising__contrast">Контраст</div>
+                </div>
+                <div class="body-advertising__switch">
+                    <div class="adwertising__switch-block body-advertising__switch-sprite">
+                        Переключатель
+                    </div>
+                </div>
+            </div>
+            <div class="sattings-body__button1">
+                <div class="sattings-body__button-wrapper">
+                    <div class="sattings-body__btn-enter btn-enter--mod">Запостить</div>
+                    <div class="sattings-body__btn-no btn-no--mod">Отмена</div>
+                </div>
+            </div>
+            <div class="body-advertising__price2">
+                <div class="ody-advertising__sprite-oll2">
+                    <div class="toggle-crop">
+                        <div class="advertising-sprite-block body-advertising__crop2">Обрезать</div>
+                        <div class="adwertising__switch-block body-advertising__switch-sprite1">
+                            Переключатель
+                        </div>
+                    </div>
+                    <div class="toggle-fill">
+                        <div class="advertising-sprite-block body-advertising__fill2">Обрезать</div>
+                        <div class="adwertising__switch-block body-advertising__switch-sprite2">
+                            Переключатель
+                        </div>
+                    </div>
+                    <div class="togle-contrast">
+                        <div class="advertising-sprite-block body-advertising__contrast2">Обрезать</div>
+                        <div class="adwertising__switch-block body-advertising__switch-sprite3">
+                            Переключатель
+                        </div>
+                    </div>
+                </div>
+            <div class="sattings-body__button2">
+                <div class="sattings-body__button-wrapper">
+                    <div class="sattings-body__btn-enter btn-enter--mod">Запостить</div>
+                    <div class="sattings-body__btn-no btn-no--mod">Отмена</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<footer class="footer-oll">
+    <div class="footer-wrapper-block">
+        <div class="footer-wrapper-block__oll">
+            <div class="footer-wrapper__logo">
+                <img src="image/logo-footer.png">
+            </div>
+            <div class="footer-sprite__block-oll">
+                <div class="sprite-block twitter-sprite">Твиттер</div>
+                <div class="sprite-block facebook-sprite">Файсбук</div>
+                <div class="sprite-block youtube-sprite">Ютуб</div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

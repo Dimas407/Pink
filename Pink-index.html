@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="webmart" charset="utf-8" content="text/html">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pink</title>
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__oll">
+    <div class="page-header__wrapper">
+        <a class="page-header__logo">
+            <img class="logo1" src="image/logo-mobile.png" width="78px" height="25px" alt="Pink">
+            <img class="logo2" src="image/logo-2.png" width="150px" height="50px" alt="Pink">
+            <img class="logo3" src="image/logo-3.png"width="150px" height="50px" alt="Pink">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+             Открыть меню
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site -list__item--active">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="photo.html">Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="contest.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="discount.html">Скидки</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
+</header>
+<script type="text/javascript">
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')){
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        }else{
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+    })
+</script>
+    <div class="page-header__image">
+        <img class="city-mob city-mob__iphone" src="image/city-iphone.jpg">
+        <img class="city-mob__iphone2" src="image/city-iphone2.jpg">
+        <img class="city-mob__iphone3" src="image/city-iphone3.jpg">
+    </div>
+    <section class="section-processor">
+        <div class="section-processor--wrapper">
+            <div class="section-processor__h2">
+                <h2>
+                    Взгляни на жизнь иначе!
+                </h2>
+            </div>
+            <button class="button-head" type="button">Скачать приложение</button>
+            <div class="section-processor__sprite">
+                <div class="section-processor__sprite-wrapper processor-sprite">
+                    <ul>
+                        <li class="apple-sprite"><a href="#">Apple</a></li>
+                        <li class="android-sprite"><a href="#">Android</a></li>
+                        <li class="microsoft-sprite"><a href="#">Microsoft</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-processor__available">
+                <span>Доступно для iPhone, iPad Android,</span>
+                <span>Windows Phone, OS X, Windows 8</span>
+            </div>
+        </div>
+    </section>
+    <div class="body-h2">
+        <div class="body-h2__wrapper">
+            <h2 class="body-h2__first">Устали от серости мегаполиса?</h2>
+            <h2 class="body-h2__second">Нам есть что вам предложить!</h2>
+        </div>
+    </div>
+    <div class="body-advertising advertising-block">
+        <img class="body-advertising__mask" src="image/mask.png" width="100%">
+        <div class="body-advertising__wrapper">
+            <div class="body-advertising__text-oll">
+                <div class="body-advertising1">
+                    <img src="image/iphone1.png">
+                    <div class="body-advertising__text">
+                        <h3>Поднимает настроение</h3>
+                            <p>
+                                Приложение позволит вам победить
+                                осеннюю хандру и депресию
+                                буквально в несколько кликов!
+                            </p>
+                    </div>
+                </div>
+                <div class="body-advertising2">
+                    <img src="image/iphone2.png">
+                    <div class="body-advertising__text">
+                        <h3>Меняет мир вокруг</h3>
+                            <p>
+                                Сделайте снимок и украсте его
+                                смайликом или текстовой подписью,
+                                чтобы усилить эфект
+                            </p>
+                    </div>
+                </div>
+                <div class="body-advertising3">
+                    <img src="image/iphone3.png">
+                    <div class="body-advertising__text">
+                        <h3>Заводит новых друзей</h3>
+                            <p>
+                                Ставьте лайки, коментируйте,
+                                делитесь фотографиями с друзьями и
+                                заводите новых
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="body-advertising__img">
+                <div class="body-advertising__img-wrapper">
+                    <img class="body-advertising__img1" src="image/mobile.png">
+                    <img class="body-advertising__img2" src="image/mobile2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timer-effect">
+        <div class="timer-effect__wrapper">
+            <div class="timer-effect-img">
+                <img src="image/time.png">
+            </div>
+            <div class="timer-effect__advertising">
+                <h2>Эфект на 24 часа!</h2>
+                <p>
+                    Британсие ученые провели исследования
+                    и доказали, что положительный эфект
+                    от использования приложений длится
+                    целые сутки!
+                </p>
+                <p>
+                    <a href="#">Узать больше об исследовании</a>
+                </p>
+            </div>
+        </div>
+    </div>
+<div class="slider-body__first">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="site-wrapper">
+        <div class="content-wrapper">
+            <div class="slider">
+                <div class="slid" id="slid1">
+                    <div class="slid-oll">
+                        <div class="quotes quotes-sprite"></div>
+                        <div class="arrow arrow-button"></div>
+                        <div class="slide-name__person">
+                            <div class="slid-title">Николай Петров</div>
+                                <p>25 лет, водитель трамвая</p>
+                        </div>
+                        <p class="slid-oll__text">
+                            «Это приложение перевернуло мой мир
+                            и позволило по новому взглануть на
+                            превычные серые вещи! А еще я
+                            познакомился со своей будущей женой
+                            в коментариях к выложеной
+                            фотографии!»
+                        </p>
+                    </div>
+                </div>
+                <div class="slid" id="slid2">
+                    <div class="slid-oll">
+                        <div class="slide-name__person">
+                            <div class="slid-title">Игорь Саруханов</div>
+                                <p>30 лет, таксист</p>
+                        </div>
+                        <p class="slid-oll__text">
+                            В этом преложении все очень просто доступно
+                            и легко найти новых друзей.
+                        </p>
+                    </div>
+                </div>
+                <div class="slid" id="slid3">
+                    <div class="slid-oll">
+                        <div class="slide-name__person">
+                            <div class="slid-title">Ирина Олегрова</div>
+                                <p>35 лет, масажист</p>
+                        </div>
+                        <p class="slid-oll__text">
+                            С этим приложением я получаю море положительных эмоций.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" class="javascript" >
+        var chet = 1;
+        window.onload = function () { setTimeout(frout, 3000); }
+        function frout() {
+            chet++;
+            if (chet>3) {chet=0;}
+            switch(chet) {
+                case 1:
+                    document.getElementById('slid1').setAttribute("style","display:none;");
+                    document.getElementById('slid2').setAttribute("style","display:block;");
+                    break;
+				case 2:
+                    document.getElementById('slid2').setAttribute("style","display:none;");
+                    document.getElementById('slid3').setAttribute("style","display:block;");
+                    break;
+				case 3:
+                    document.getElementById('slid3').setAttribute("style","display:none;");
+                    document.getElementById('slid1').setAttribute("style","display:block;");
+                    break;
+            }
+            setTimeout(frout, 3000);
+        }
+    </script>
+</div>
+<div class="slider-body__second slide-mask">
+    <img class="slider-body__mask" src="image/mask.png" width="100%">
+    <input type="radio" id="btn-4" name="switch"checked>
+    <input type="radio" id="btn-5" name="switch">
+    <input type="radio" id="btn-6" name="switch">
+    <div class="site-wrapper2">
+        <div class="content-wrapper2">
+            <div class="slider">
+                <div class="slide" id="slid4">
+                    <div class="slide-title__oll">
+                        <div class="slide-title__left"></div>
+                        <div class="slide-title__center slide-title__center--sprite">
+                            <div class="slide-title">База</div>
+                            <div class="slide-title__price">1 99 usd</div>
+                        </div>
+                        <div class="slide-title__right"></div>
+                    </div>
+                    <div class="slider-table--oll">
+                        <table class="slider-table__sprite table-sprite">
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-yes">Розовый фильтр</td>
+                                <td class="table-right"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-no">Смайлики</td>
+                                <td class="table-right"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-no">Комментарии</td>
+                                <td class="table-right"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="slide" id="slid5">
+                    <div class="slide-title__oll">
+                        <div class="slide-title__left"></div>
+                        <div class="slide-title__center slide-title__center--sprite">
+                            <div class="slide-title__sprite"></div>
+                            <div class="slide-title">Стандарт</div>
+                            <div class="slide-title__price">3 99 usd</div>
+                        </div>
+                        <div class="slide-title__right"></div>
+                    </div>
+                    <div class="slider-table--oll">
+                        <table class="slider-table__sprite table-sprite">
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-yes">Розовый фильтр</td>
+                                <td class="table-right"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-yes">Смайлики</td>
+                                <td class="table-right"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-no">Комментарии</td>
+                                <td class="table-right"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="slide" id="slid6">
+                    <div class="slide-title__oll">
+                        <div class="slide-title__left"></div>
+                        <div class="slide-title__center slide-title__center--sprite">
+                            <div class="slide-title">Анлим</div>
+                            <div class="slide-title__price">9 99 usd</div>
+                        </div>
+                        <div class="slide-title__right"></div>
+                    </div>
+                    <div class="slider-table--oll">
+                        <table class="slider-table__sprite table-sprite">
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-yes">Розовый фильтр</td>
+                                <td class="table-right"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-yes">Смайлики</td>
+                                <td class="table-right"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-left"></td>
+                                <td class="table-center sprite-yes">Комментарии</td>
+                                <td class="table-right"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls2">
+                <label for="btn-4"></label>
+                <label for="btn-5"></label>
+                <label for="btn-6"></label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="table-body table-mask">
+    <img class="table-body__mask" src="image/mask.png" width="100%">
+    <div class="table-body__wrapper">
+        <div class="table-body__proposition">
+            <div class="slide-title__center slide-title__center--sprite">
+                <div class="slide-title">База</div>
+                <div class="slide-title__price">1 99 usd</div>
+            </div>
+            <div class="slide-title__center slide-title__center--sprite">
+                <div class="slide-title__sprite"></div>
+                <div class="slide-title">Стандарт</div>
+                <div class="slide-title__price">3 99 usd</div>
+            </div>
+            <div class="slide-title__center slide-title__center--sprite">
+                <div class="slide-title">Анлим</div>
+                <div class="slide-title__price">9 99 usd</div>
+            </div>
+        </div>
+        <table cellspacing="0" width="100%">
+            <tr>
+                <th class="table-body__title">Розовывй фильтр</th>
+                <th class="table-sprite2 table-yes">Yes</th>
+                <th class="table-sprite2 table-yes">Yes</th>
+                <th class="table-sprite2 table-yes">Yes</th>
+            </tr>
+            <tr>
+                <th class="table-body__title">Смайлики</th>
+                <th class="table-sprite2 table-no">No</th>
+                <th class="table-sprite2 table-yes">Yes</th>
+                <th class="table-sprite2 table-yes">Yes</th>
+            </tr>
+            <tr>
+                <th class="table-body__title">Комментарии</th>
+                <th class="table-sprite2 table-no">No</th>
+                <th class="table-sprite2 table-no">No</th>
+                <th class="table-sprite2 table-yes">Yes</th>
+            </tr>
+        </table>
+    </div>
+</div>
+    <div class="address-telephone-mail">
+        <div class="address-telephone-mail__wrapper">
+            <h2>
+                <span>Остались вопрос?</span>
+                <span>Свяжитесь с нами!</span>
+            </h2>
+                <div class="telephone-mail__magazine">
+                    <div class="telephone-site">
+                        <h3>Звоните:</h3>
+                        <div class="telephone">
+                            +7(812)555-66-66
+                        </div>
+                    </div>
+                    <div class="address1">
+                        <h3>Приезжайте в гости:</h3>
+                        <div class="address-site">
+                            ул. Третья
+                            Строителей, 25/12
+                        </div>
+                    </div>
+                    <div class="mail-site">
+                        <h3>Пишите:</h3>
+                        <div class="mail">
+                        mail@webuslygi.ru
+                        </div>
+                    </div>
+                </div>
+                    <div class="address">
+                        <h3>Приезжайте в гости:</h3>
+                        <div class="address-site">
+                            ул. Третья
+                            Строителей, 25/12
+                        </div>
+                    </div>
+        </div>
+    </div>
+<div class="map-site">
+    <div class="map-site__wrapper">
+        <img class="map1" src="image/map.jpg">
+        <img class="map2" src="image/map2.png">
+        <img class="map3" src="image/map3.jpg">
+    </div>
+</div>
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-logo">
+            <img src="image/logo-footer.png">
+        </div>
+        <div class="footer-sprite sprite-social">
+            <div class="block twitter">Twitter</div>
+            <div class="block facebook">Facebook</div>
+            <div class="block youtube">Youtube</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
