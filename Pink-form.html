@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="webmart" charset="utf-8" content="text/html">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pink</title>
+</head>
+<body>
+<header class="page-header">
+<div class="page-header__oll">
+    <div class="page-header__wrapper">
+        <a class="page-header__logo">
+            <img class="logo1" src="image/logo-mobile.png" width="78px" height="25px" alt="Pink">
+            <img class="logo2" src="image/logo-2.png" width="150px" height="50px" alt="Pink">
+            <img class="logo3" src="image/logo-3.png"width="150px" height="50px" alt="Pink">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="main-nav__toggle" type="button">
+                Открыть меню
+            </div>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site -list__item--active">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="photo.html">Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="contest.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="discount.html">Скидки</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+</header>
+<script type="text/javascript">
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')){
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        }else{
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+    })
+</script>
+    <div class="page-header__image">
+        <img class="city-mob city-mob__iphone" src="image/city-mobile.jpg">
+        <img class="city-mob__iphone2" src="image/city-tablet.jpg">
+        <img class="city-mob__iphone3" src="image/city-desctop.jpg">
+    </div>
+    <div class="page-header__h1-form">
+        <h1>Конкурс на самое
+        безбашеное
+        путешествие с Пинк</h1>
+    </div>
+    <div class="body-text-form">
+        <div class="body-text-form__wrapper">
+            Поделитесь своей историей и получите
+            шанс выйграть ценный произ - 1000
+            миль на вашу бонусную карту!
+            <div class="body-text-form__eddition">
+                Пожалуйста, заполните форму ниже:
+            </div>
+        </div>
+    </div>
+    <div class="form-name-radio">
+        <div class="form-name-radio__wrapper">
+            <form class="form-block__name">
+                <div class="form-block__name-wrapper">
+                    <div class="form-block__name-input">
+                        <div class="form-block__name-label-input">
+                            <label for="text-1">Фамилия:</label>
+                            <input type="text" id="text-1" placeholder="Укажите фамилию*">
+                        </div>
+                        <div class="form-block__name-label-input">
+                            <label for="text-2">Имя:</label>
+                            <input type="text" id="text-2" placeholder="Укажите ваше имя*">
+                        </div>
+                        <div class="form-block__name-label-input">
+                            <label for="text-3">Отчество:</label>
+                            <input type="text" id="text-3" placeholder="Ну и отчество тоже">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form class="form-block__radio-tablet">
+                <div class="form-block__radio-wrapper">
+                    <h3>С каким приложением
+                        путешествовали?</h3>
+                    <input type="radio" id="rad1">
+                    <label for="rad1">Pink для iOS</label>
+                    <input type="radio" id="rad2">
+                    <label for="rad2">Pink для Android</label>
+                    <input type="radio" id="rad3">
+                    <label for="rad3">Windows Phone</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <form class="form-block__contact-tablet">
+        <div class="form-block__contact-wrapper">
+            <h3>Контактная информация</h3>
+            <div class="form-block__contact-tablet-oll">
+                <div class="form-contact-block">
+                    <input type="text" id="inp1" placeholder="Номер, пожалуйста">
+                    <div class="form-sprite phone-sprite">Телефон</div>
+                    <label for="inp1">Номер телефона</label>
+                </div>
+                <div class="form-contact-block">
+                    <input type="text" id="inp2" placeholder="Введите почту">
+                    <div class="form-sprite mail-sprite">Эмейл</div>
+                    <label for="inp2">Адрес почты</label>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form class="form-block__checkbox">
+        <div class="form-block__checkbox-wrapper">
+                <h3>Ваши безбашенные
+                в путешествии</h3>
+            <div class="form-block__checkbox-wrapper-oll">
+                <input type="checkbox" id="ch1">
+                <label for="ch1">Сделал селфи с акулой</label>
+                <input type="checkbox" id="ch2">
+                <label for="ch2">Обгорел на пляже</label>
+                <input type="checkbox" id="ch3">
+                <label for="ch3">Видел Чака Норриса</label>
+                <input type="checkbox" id="ch4">
+                <label for="ch4">Накупил сувениров</label>
+                <input type="checkbox" id="ch5">
+                <label for="ch6">Удержал башню</label>
+                <input type="checkbox" id="ch6">
+                <label for="ch6">Разгромил отель</label>
+            </div>
+        </div>
+    </form>
+    <div class="form-block__checkbox-desktop">
+        <div class="form-block__checkbox-desktop-wrapper">
+            <div class="form-block__checkbox-wrapper">
+                <h3>Ваши безбашенные
+                    в путешествии</h3>
+                <div class="form-block__checkbox-wrapper-oll">
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="ch1">
+                        <label for="ch1">Сделал селфи с акулой</label>
+                        <input type="checkbox" id="ch2">
+                        <label for="ch2">Обгорел на пляже</label>
+                    </div>
+                        <div class="form-checkbox">
+                        <input type="checkbox" id="ch3">
+                        <label for="ch3">Видел Чака Норриса</label>
+                        <input type="checkbox" id="ch4">
+                        <label for="ch4">Накупил сувениров</label>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="ch5">
+                        <label for="ch6">Удержал башню</label>
+                        <input type="checkbox" id="ch6">
+                        <label for="ch6">Разгромил отель</label>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <form class="form-block__contact">
+        <div class="form-block__contact-wrapper">
+            <label for="inp1">Номер телефона</label>
+            <input type="text" id="inp1" placeholder="Номер пожалуйста">
+            <label for="inp2">Адрес почты</label>
+            <input type="text" id="inp2" placeholder="Введите пожалуйста*">
+        </div>
+    </form>
+    <form class="form-block__radio">
+        <div class="form-block__radio-wrapper">
+            <h3>С каким приложением
+            путешествовали?</h3>
+            <input type="radio" id="rad1">
+            <label for="rad1">Pink для iOS</label>
+            <input type="radio" id="rad2">
+            <label for="rad2">Pink для Android</label>
+            <input type="radio" id="rad3">
+            <label for="rad3">Windows Phone</label>
+        </div>
+    </form>
+    <form class="form-block__comint">
+        <div class="form-block__comint-wrapper">
+            <h3>Опишите свои эмоции</h3>
+            <input type="text" placeholder="Можно прям в красках, не стесняясь в выражениях">
+        </div>
+    </form>
+    <div class="button-page">
+        <div class="button-page__wrapper">
+            <div class="button">Отправить форму</div>
+        </div>
+    </div>
+    <div class="addition">
+        <div class="addition__wrapper">
+            <span class="addition-star">*</span>_Обязательные поля
+        </div>
+    </div>
+    <div class="button-page-addition__tablet">
+        <div class="button-page-addition__tablet-wrapper">
+            <div class="button-page__wrapper">
+                <div class="button">Отправить форму</div>
+            </div>
+            <div class="addition__wrapper">
+                <span class="addition-star">*</span>_Обязательные поля
+            </div>
+        </div>
+    </div>
+        <div class="button-page-addition__desktop">
+            <div class="button-page-addition__desktop-wrapper">
+                <div class="button-page__wrapper">
+                    <div class="button">Отправить форму</div>
+                </div>
+                <div class="addition__wrapper">
+                    <span class="addition-star">*</span>_Обязательные для заполнения поля
+                </div>
+            </div>
+        </div>
+<footer class="footer-oll">
+    <div class="footer-wrapper-block">
+        <div class="footer-wrapper-block__oll">
+            <div class="footer-wrapper__logo">
+                <img src="image/logo-footer.png">
+            </div>
+            <div class="footer-sprite__block-oll">
+                <div class="sprite-block twitter-sprite">Твиттер</div>
+                <div class="sprite-block facebook-sprite">Файсбук</div>
+                <div class="sprite-block youtube-sprite">Ютуб</div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
